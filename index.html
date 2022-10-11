@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first to 100</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p class="ttl">PIG 🐷 GAME</p>
+    <p class="ttl ttl1">First To Make $100 ?</p>
+    <div class="container">
+      <button class="audio btn">🔇</button>
+      <!-- player 1 -->
+      <div class="player-section player--0 player-active">
+        <div class="main">
+          <h1 class="main-name main-name--0">PLAYER 1</h1>
+          <p class="main-score--0">43</p>
+        </div>
+        <div class="currentEl">
+          <h3>Current Cash</h3>
+          <p class="current-value--0">0</p>
+        </div>
+      </div>
+
+      <!-- player 2 -->
+      <div class="player-section player--1">
+        <div class="main">
+          <h1 class="main-name main-name--1">PLAYER 2</h1>
+          <p class="main-score--1">15</p>
+        </div>
+        <div class="currentEl">
+          <h3>Current Cash</h3>
+          <p class="current-value--1">0</p>
+        </div>
+      </div>
+      <!-- dice and buttons -->
+      <div class="belt">
+        <button class="btn btn-New">🔁 NEW GAME</button>
+        <img src="../img/dice-4.png" alt="Dice" class="dice" />
+        <button class="btn btn-Roll">🎲 ROLL DICE</button>
+        <button class="btn btn-Hold">📥 HOLD</button>
+      </div>
+      <button class="how btn">How to Play🎮 ℹ</button>
+      <div class="overlay"></div>
+      <div class="story">
+        <h2>HOW TO PLAY 🎮</h2>
+        <p>🏆The first player to accumulate a total of $100 wins!</p>
+        <p>click <em>🎲 ROLL DICE</em> to get a random cash between $1 - $6</p>
+        <p>📈continue rolling the dice to accumulate more cash</p>
+        <p>
+          👎🏼Any Player that rolls <em>dice 1</em> loses his turn and accumulated
+          cash
+        </p>
+        <p>
+          🔐Click on <em>📥 HOLD</em> to store accumulated cash and lose your
+          turn
+        </p>
+        <p>🥇The Greedy can win! or lose! BE SMART🤑</p>
+        <p>🔑'ESC' or 'i' ==> How To Play /p></p>
+        <p>🔑'r' or 'd' ==> Roll Dice /p></p>
+        <p>🔑'h' or 'b' ==> Hold /p></p>
+        <p>🔑'z' or 'n' ==> New Game /p></p>
+        <p>🔑's' ==> Sound on /p></p>
+        <p>🔑'p' ==> Sound off /p></p>
+        <p>🎭GOODLUCK💰</p>
+      </div>
+      <footer class="footer">
+        copyright &copy; NwekeMaxwell37@gmail.com All rights reserved. Web
+        design and Game developed by @NwekeMaxwell. Enjoy🎉
+      </footer>
+    </div>
+    <audio autoplay class="myaudio">
+      <source src="../audio/chill.mp3" type="audio/mp3" />
+      <source src="../audio/chill.mp3" type="audio/mpeg" />
+      No Browser support for audio!
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>

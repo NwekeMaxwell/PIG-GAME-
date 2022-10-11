@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(150, 160, 245),
+    rgb(9, 11, 151)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 1.5vh auto;
+  width: 58vw;
+  display: flex;
+  border-radius: 0.3rem;
+  box-shadow: 0rem 1rem 2rem rgb(0, 0, 0, 0.3);
+  position: relative;
+}
+.player-section {
+  width: 50%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.belt {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  top: 70%;
+  left: 50%;
+}
+.btn {
+  padding: 0.7rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0rem 1rem 2rem rgb(0, 0, 0, 0.2);
+  transition: all 0.1s;
+}
+.btn:active {
+  transform: translateY(2px);
+}
+.main {
+  text-align: center;
+}
+.main-score--0,
+.main-score--1 {
+  color: rgb(9, 11, 151);
+  font-size: 10vh;
+  font-weight: 500;
+}
+.currentEl {
+  background-color: rgb(56, 71, 207);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  height: 13vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  width: fit-content;
+  align-self: center;
+}
+h1 {
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.7);
+}
+h3 {
+  font-size: 1.35rem;
+}
+.current-value--0,
+.current-value--1 {
+  font-size: 1.75rem;
+}
+.btn-New {
+  margin-top: -35vh;
+}
+.dice {
+  height: 15vh;
+  margin-top: 10vh;
+  border-radius: 0.3rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+.btn-Roll {
+  margin-top: 15vh;
+}
+.btn-Hold {
+  margin-top: 2vh;
+}
+.player-active {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: inherit;
+}
+.hidden {
+  display: none;
+}
+.player-wins {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: inherit;
+}
+.player-wins h1 {
+  color: blue;
+}
+.how {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem;
+  border: 1px solid blue;
+  background-color: rgb(135, 136, 221);
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.story {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.2rem;
+  text-align: center;
+  border: 3px inset blue;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+}
+.close {
+  text-align: end;
+  cursor: pointer;
+}
+.ttl {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  color: rgb(26, 32, 87);
+  margin-top: 1rem;
+}
+.ttl1 {
+  font-size: 1.5rem;
+  margin-top: 0rem;
+}
+.footer {
+  position: absolute;
+  bottom: .001rem;
+  background-color:rgb(4, 6, 82);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+.audio {
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  padding: 0;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 95vw;
+  }
+  .player-section {
+    padding: 3rem;
+  }
+  .btn-New {
+    margin-top: -35vh;
+  }
+  .dice {
+    height: 12vh;
+    margin-top: 5vh;
+  }
+  .btn-Roll {
+    margin-top: 5vh;
+  }
+  .btn-Hold {
+    margin-top: 2vh;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .player-section {
+    padding: 1.5rem;
+  }
+  .how {
+    top: 0.3rem;
+    left: 0.2rem;
+    padding: 0.1rem;
+    font-size: 0.4rem;
+  }
+  .audio {
+    top: 0.3rem;
+    right: 0.3rem;
+    font-size: 1rem;
+  }
+  .ttl {
+    font-size: 2rem;
+  }
+  .ttl1 {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.6rem;
+  }
+  .btn {
+    padding: 0.1rem;
+    border-radius: 5px;
+  }
+  .main-score--0,
+  .main-score--1 {
+    font-size: 5vh;
+  }
+  .story {
+    font-size: 0.75rem;
+  }
+  .footer {
+ font-size: 60%;
+  }
+}
